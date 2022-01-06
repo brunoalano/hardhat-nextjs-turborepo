@@ -22,7 +22,7 @@
     "globalDependencies": [
       ".env"
     ],
-    "npmClient": "yarn",
+    "npmClient": "npm",
     "pipeline": {
       "build": {
         "dependsOn": [
