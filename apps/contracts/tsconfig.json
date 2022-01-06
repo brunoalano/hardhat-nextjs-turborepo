@@ -1,0 +1,11 @@
+{
+  "extends": "tsconfig/contracts.json",
+  "include": [
+    "hardhat.config.ts",
+    "./scripts",
+    "./deploy",
+    "./test",
+    "./typechain"
+  ],
+  "exclude": ["node_modules"]
+}

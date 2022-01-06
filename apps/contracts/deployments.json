@@ -1,0 +1,80 @@
+{
+  "3": {
+    "ropsten": {
+      "name": "ropsten",
+      "chainId": "3",
+      "contracts": {
+        "Storage": {
+          "address": "0x249B3b91dcFE014a4740bD12854e1D2a5660A109",
+          "abi": [
+            {
+              "inputs": [],
+              "name": "retrieve",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "num",
+                  "type": "uint256"
+                }
+              ],
+              "name": "store",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "1337": {
+    "localhost": {
+      "name": "localhost",
+      "chainId": "1337",
+      "contracts": {
+        "Storage": {
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "abi": [
+            {
+              "inputs": [],
+              "name": "retrieve",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "num",
+                  "type": "uint256"
+                }
+              ],
+              "name": "store",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

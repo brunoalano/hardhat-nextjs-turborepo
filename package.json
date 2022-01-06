@@ -10,13 +10,17 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "deploy-contracts": "npm run deploy -w contracts --"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
   "turbo": {
+    "baseBranch": "origin/main",
+    "globalDependencies": [".env"],
+    "npmClient": "npm",
     "pipeline": {
       "build": {
         "dependsOn": [
@@ -24,7 +28,9 @@
         ],
         "outputs": [
           "dist/**",
-          ".next/**"
+          ".next/**",
+          "typechain/**",
+          "deployments.json"
         ]
       },
       "lint": {

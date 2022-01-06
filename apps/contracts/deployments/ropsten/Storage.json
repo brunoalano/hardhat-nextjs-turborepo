@@ -1,0 +1,97 @@
+{
+  "address": "0x249B3b91dcFE014a4740bD12854e1D2a5660A109",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "retrieve",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "store",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xe06f113995be3e83ef6faaca4de754127aaad7b0e0e899f2ad5f1fb75fd1e2b8",
+  "receipt": {
+    "to": null,
+    "from": "0x10281799d2904046a3b8De084d1dCF440Dbc37D1",
+    "contractAddress": "0x249B3b91dcFE014a4740bD12854e1D2a5660A109",
+    "transactionIndex": 16,
+    "gasUsed": "90551",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xcd6c06e498aad5e65881e2d9a5b9a977713c6867aee36cf22adc844d36dab96b",
+    "transactionHash": "0xe06f113995be3e83ef6faaca4de754127aaad7b0e0e899f2ad5f1fb75fd1e2b8",
+    "logs": [],
+    "blockNumber": 11764738,
+    "cumulativeGasUsed": "6001668",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "f45674f0b868a35984503dec91c98845",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"store\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Store & retrieve value in a variable\",\"kind\":\"dev\",\"methods\":{\"retrieve()\":{\"details\":\"Return value \",\"returns\":{\"_0\":\"value of 'number'\"}},\"store(uint256)\":{\"details\":\"Store value in variable\",\"params\":{\"num\":\"value to store\"}}},\"title\":\"Storage\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Storage.sol\":\"Storage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"src/Storage.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\n\\npragma solidity >=0.7.0 <0.9.0;\\n\\n/**\\n * @title Storage\\n * @dev Store & retrieve value in a variable\\n */\\ncontract Storage {\\n\\n    uint256 number;\\n\\n    /**\\n     * @dev Store value in variable\\n     * @param num value to store\\n     */\\n    function store(uint256 num) public {\\n        number = num;\\n    }\\n\\n    /**\\n     * @dev Return value \\n     * @return value of 'number'\\n     */\\n    function retrieve() public view returns (uint256){\\n        return number;\\n    }\\n}\",\"keccak256\":\"0xb6ee9d528b336942dd70d3b41e2811be10a473776352009fd73f85604f5ed206\",\"license\":\"GPL-3.0\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060ac8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80632e64cec11460375780636057361d14604c575b600080fd5b60005460405190815260200160405180910390f35b605c6057366004605e565b600055565b005b600060208284031215606f57600080fd5b503591905056fea2646970667358221220f4448bf3dcb18fdb645b9c8caa7835dc612d8f028b93e51e9e44790dfad7898864736f6c63430008090033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80632e64cec11460375780636057361d14604c575b600080fd5b60005460405190815260200160405180910390f35b605c6057366004605e565b600055565b005b600060208284031215606f57600080fd5b503591905056fea2646970667358221220f4448bf3dcb18fdb645b9c8caa7835dc612d8f028b93e51e9e44790dfad7898864736f6c63430008090033",
+  "devdoc": {
+    "details": "Store & retrieve value in a variable",
+    "kind": "dev",
+    "methods": {
+      "retrieve()": {
+        "details": "Return value ",
+        "returns": {
+          "_0": "value of 'number'"
+        }
+      },
+      "store(uint256)": {
+        "details": "Store value in variable",
+        "params": {
+          "num": "value to store"
+        }
+      }
+    },
+    "title": "Storage",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 4,
+        "contract": "src/Storage.sol:Storage",
+        "label": "number",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
