@@ -2,7 +2,8 @@
   "name": "contracts",
   "scripts": {
     "dev": "hardhat node --watch --export-all deployments.json --silent",
-    "deploy": "hardhat deploy"
+    "deploy": "hardhat deploy",
+    "build": "hardhat typechain"
   },
   "files": [
     "deployments.json",
