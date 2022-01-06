@@ -11,10 +11,11 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "deploy-contracts": "npm run deploy -w contracts --"
+    "deploy-contracts": "yarn deploy -w contracts --"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
     "turbo": "latest"
   },
   "turbo": {
@@ -22,7 +23,7 @@
     "globalDependencies": [
       ".env"
     ],
-    "npmClient": "npm",
+    "npmClient": "yarn",
     "pipeline": {
       "build": {
         "dependsOn": [
